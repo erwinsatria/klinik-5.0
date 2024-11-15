@@ -6,7 +6,8 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" />
+                        <h1 class="mr-5 text-3xl hover:text-4xl font-extrabold">Klinik</h1>
+                        {{-- <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" /> --}}
                     </a>
                 </div>
 
@@ -18,20 +19,8 @@
                 </div>
                 
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('berobat.index')" :active="request()->routeIs('berobat.index','berobat.create','berobat.edit')">
-                        {{ __('Berobat') }}
-                    </x-nav-link>
-                </div>
-
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('kb.index')" :active="request()->routeIs('kb.index','kb.create','kb.edit')">
-                        {{ __('Keluarga Berencana') }}
-                    </x-nav-link>
-                </div>
-
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('hamil.index')" :active="request()->routeIs('hamil.index','hamil.create','hamil.edit')">
-                        {{ __('Ibu Hamil') }}
+                    <x-nav-link :href="route('berobat.index')" :active="request()->routeIs('berobat.index','berobat.create','berobat.edit','kb.index','kb.create','kb.edit','hamil.index','hamil.create','hamil.edit')">
+                        {{ __('Catatan') }}
                     </x-nav-link>
                 </div>
             </div>

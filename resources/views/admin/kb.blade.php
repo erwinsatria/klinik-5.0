@@ -1,8 +1,23 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('Keluarga Berencana ( KB )') }}
-        </h2>
+        <div class="flex">
+            <div class="space-x-8 sm:-my-px sm:ms-10 sm:flex h-16">
+                <x-nav-link :href="route('berobat.index')" :active="request()->routeIs('berobat.index','berobat.create','berobat.edit')">
+                    {{ __('Berobat') }}
+                </x-nav-link>
+            </div>
+            <div class="space-x-8 sm:-my-px sm:ms-10 sm:flex h-16">
+                <x-nav-link :href="route('kb.index')" :active="request()->routeIs('kb.index','kb.create','kb.edit')">
+                    {{ __('Keluarga berencana') }}
+                </x-nav-link>
+            </div>
+            <div class="space-x-8 sm:-my-px sm:ms-10 sm:flex h-16">
+                <x-nav-link :href="route('hamil.index')" :active="request()->routeIs('hamil.index','hamil.create','hamil.edit')">
+                    {{ __('Ibu Hamil') }}
+                </x-nav-link>
+            </div>
+
+        </div>
     </x-slot>
 
     <div class="py-12">
