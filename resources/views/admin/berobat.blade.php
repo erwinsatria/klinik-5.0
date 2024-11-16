@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot name="header">
-        <div class="flex">
+        <div class="flex ">
             <div class="space-x-8 sm:-my-px sm:ms-10 sm:flex h-16">
                 <x-nav-link :href="route('berobat.index')" :active="request()->routeIs('berobat.index','berobat.create','berobat.edit')">
                     {{ __('Berobat') }}
