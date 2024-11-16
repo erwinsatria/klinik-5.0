@@ -38,7 +38,6 @@
                                 <th class="px-4 py-2 border border-gray-300">Terapi</th>
                                 <th class="px-4 py-2 border border-gray-300">Keterangan</th>
                                 <th class="px-4 py-2 border border-gray-300">Aksi</th>
-                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
