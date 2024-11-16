@@ -247,7 +247,7 @@
                                 <div class="mx-2 flex max-sm:mt-2">
                                     <div>
                                     <div>
-                                        <label for="" class="ml-2">HB</label>
+                                        <label for="" class="ml-2">H,B</label>
                                     </div>
                                     <div class="flex">
                                         <input class="max-w-20 rounded-lg" type="number" name="hb" id="" >
