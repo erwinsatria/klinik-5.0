@@ -1,9 +1,9 @@
 <nav>
-    <div class="flex my-12 py-5">
+    <div class="flex my-8 py-5">
         <div class="container mx-auto flex justify-between  ">
             <div class="flex items-center">
                 <a href="{{ route('landingpage') }}">
-                    <h1 class="mr-5 text-5xl font-extrabold text-emerald-600">Klinik</h1>
+                    <h1 class="mr-5 text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-800 to-emerald-500">Klinik</h1>
                 </a>
             </div>
             <div>
