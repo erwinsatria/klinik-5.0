@@ -1,23 +1,28 @@
 <nav>
-    <div class=" bg-emerald-500 flex h-16">
-        <div class="container mx-auto flex justify-between">
-            <div class="shrink-0 flex items-center">
+    <div class="flex my-12 py-5">
+        <div class="container mx-auto flex justify-between  ">
+            <div class="flex items-center">
                 <a href="{{ route('landingpage') }}">
-                    <h1 class="mr-5  text-3xl font-extrabold">Klinik</h1>
-                    {{-- <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" /> --}}
+                    <h1 class="mr-5 text-5xl font-extrabold text-emerald-600">Klinik</h1>
                 </a>
             </div>
             <div>
-                <ul class="flex justify-between my-5 text-center">
-                    <li class="mx-5">Home</li>
-                    <li class="mx-5">About</li>
-                    <li class="mx-5">Artikel</li>
+                <ul class="flex justify-between my-5 text-center text-lg ">
+                    <li class="mx-5 hover:text-emerald-600">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="mx-5 hover:text-emerald-600">
+                        <a href="">About</a>
+                    </li>
+                    <li class="mx-5 hover:text-emerald-600">
+                        <a href="">Artikel</a>
+                    </li>
                 </ul>
             </div>
             <div>
                 @guest
                 <div class="flex">
-                    <a href="{{route('login')}}" class="bg-gray-500 hover:bg-gray-900 hover:text-yellow-500 hover:border-yellow-500 border-2 my-2 rounded-md px-4 py-2 text-white">Login</a>
+                    <a href="{{route('login')}}" class="bg-gradient-to-r from-emerald-500 to-emerald-600 font-semibold border-b-2 border-emerald-900 hover:text-yellow-500 my-2 rounded-2xl px-6 py-2 text-white text-2xl">Log In</a>
                 </div>
                 @endguest
 

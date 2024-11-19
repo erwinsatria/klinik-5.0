@@ -16,7 +16,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     </head>
     <body class="font-sans antialiased">
-        <div class="min-h-screen bg-neutral-100 dark:bg-gray-900">
+        <div class="min-h-screen bg-[#F3F3FD] dark:bg-gray-900">
                 @include('layouts.navigation')
 
             <!-- Page Heading -->
