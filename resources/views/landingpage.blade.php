@@ -25,7 +25,7 @@
             <div class="grid grid-cols-2 z-10 container mx-auto relative mt-32">
                 <div>
                     <div class="text-6xl font-bold">
-                        <span class="text-emerald-600">Klinik Bidan Kesehatan</span>
+                        <span class="text-emerald-600">Klinik Bidan Puspa</span>
                         <h3>Solusi Kesehatan Keluarga</h3>
                         <h3 class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-800 to-emerald-300">Ibu dan Anak</h3>
                     </div>
@@ -231,14 +231,14 @@
     <section>
         <div class=" mt-10 pb-10 pt-3">
             <div class="grid grid-cols-2 container mx-auto mt-5">
-                <div>
+                <div data-aos="fade-up">
                     <img class="w-3/4 rounded-2xl" src="storage/assets/1.jpeg" alt="">
                     <div class=" w-3/4 z-10 -mt-32 ml-20">
                         <img class="w-5/4 rounded-2xl" src="https://images.pexels.com/photos/14751438/pexels-photo-14751438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
                     </div>
                 </div>
 
-                <div class="flex flex-col gap-y-10">
+                <div class="flex flex-col gap-y-10" data-aos="fade-up">
                     <div class="bg-white h-fit flex flex-col gap-y-8 py-10 px-10 rounded-2xl items-center shadow-lg">
                         <h1 class="text-4xl font-semibold text-emerald-600">Kenapa Memilih Kami?</h1>
                         <p class="text-base">Dengan layanan yang ramah & transparan kami berkomitmen untuk menjadi mitra kesehatan Anda dalam setiap langkah perjalanan kehamilan dan perawatan keluarga. Kami juga menawarkan berbagai program edukasi dan konseling untuk membantu ibu dan keluarga mempersiapkan diri dengan baik, mulai dari masa kehamilan hingga perawatan pasca persalinan.
@@ -250,15 +250,15 @@
 
                     
                     <div class="grid grid-cols-3 gap-x-8">
-                        <div class="bg-white rounded-2xl mx-auto py-5 shadow-md">
+                        <div class="bg-white rounded-2xl mx-auto py-5 shadow-md" data-aos="fade-up">
                             <img class=" px-16" src="https://img.icons8.com/pulsar-color/96/hospital-bed.png" alt="">
                             <p class="mt-5 text-center">Lingkungan Nyaman</p>
                         </div>
-                        <div class="bg-white rounded-2xl mx-auto py-5 shadow-md">
+                        <div class="bg-white rounded-2xl mx-auto py-5 shadow-md" data-aos="fade-up">
                             <img class=" px-16" src="https://img.icons8.com/pulsar-color/96/hospital-wagon-without-a-siren.png" alt="">
                             <p class="mt-5 text-center">Mudah Diakses</p>
                         </div>
-                        <div class="bg-white rounded-2xl mx-auto py-5 shadow-md">
+                        <div class="bg-white rounded-2xl mx-auto py-5 shadow-md" data-aos="fade-up">
                             <img class=" px-16" src="https://img.icons8.com/pulsar-color/96/out-patient-department.png" alt="">
                             <p class="mt-5 text-center">Aman</p>
                         </div>
@@ -268,9 +268,9 @@
         </div>
     </section>
 {{-- ARTIKEL --}}
-    <section class="artikel bg-gradient-to-r from-emerald-100 to-emerald-50 my-10">
-        <div class="container mx-auto py-10">
-            <h1 class="text-5xl font-bold text-center mb-8">Artikel</h1>
+    <section class="artikel bg-gradient-to-r from-emerald-100 to-emerald-50 mt-10">
+        <div class="container mx-auto py-10" data-aos="fade-up">
+            <h1 class="text-5xl font-bold text-center mb-8" data-aos="fade-up">Artikel</h1>
             <div class="grid grid-cols-2 gap-x-8 gap-y-5">
                 <div class="bg-white rounded-2xl py-3 px-8 shadow-lg">
                     <h1 class="text-center font-semibold mb-5 text-lg">Pentingnya Pemeriksaan Kebidanan Rutin untuk Kesehatan Ibu dan Janin</h1>
@@ -310,5 +310,6 @@
         </div>
     </section>
 {{-- END ARTIKEL --}}
-    <div class="h-screen"></div>
+
+    
 </x-guest-layout>

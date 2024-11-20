@@ -1,5 +1,5 @@
 <x-guest-layout>
-    <div class="bg-white container mx-auto mt-20 justify-center items-center max-w-lg px-5 py-5 rounded-lg">
+    <div class="bg-white container mx-auto mt-20 justify-center items-center max-w-lg px-5 py-5 rounded-lg mb-[300px]">
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
