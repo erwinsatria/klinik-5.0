@@ -6,18 +6,16 @@
                     <h1 class="mr-5 text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-800 to-emerald-500">Klinik</h1>
                 </a>
             </div>
-            <div>
-                <ul class="flex justify-between my-5 text-center text-lg ">
-                    <li class="mx-5 hover:text-emerald-600">
-                        <a href="">Home</a>
-                    </li>
-                    <li class="mx-5 hover:text-emerald-600">
-                        <a href="">About</a>
-                    </li>
-                    <li class="mx-5 hover:text-emerald-600">
-                        <a href="">Artikel</a>
-                    </li>
-                </ul>
+            <div class="flex justify-between my-5 text-center text-lg gap-x-5">
+               <x-nav-page :href="route('landingpage')" :active="request()->routeIs('landingpage')">
+                    Home
+               </x-nav-page>
+               <x-nav-page :href="route('kb.index')" :active="request()->routeIs('kb.index')">
+                    About
+                </x-nav-page>
+                <x-nav-page :href="route('kb.index')" :active="request()->routeIs('kb.index')">
+                    Artikel
+                </x-nav-page>
             </div>
             <div>
                 @guest

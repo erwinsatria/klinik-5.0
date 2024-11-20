@@ -232,21 +232,83 @@
         <div class=" mt-10 pb-10 pt-3">
             <div class="grid grid-cols-2 container mx-auto mt-5">
                 <div>
-                    <img class="w-3/4 rounded-2xl" src="https://images.pexels.com/photos/7088487/pexels-photo-7088487.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                    <img class="w-3/4 rounded-2xl" src="storage/assets/1.jpeg" alt="">
                     <div class=" w-3/4 z-10 -mt-32 ml-20">
                         <img class="w-5/4 rounded-2xl" src="https://images.pexels.com/photos/14751438/pexels-photo-14751438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
                     </div>
                 </div>
 
-                {{-- <div class="bg-white">
-                    <h1>Kenapa Memilih Kami?</h1>
-                    <p>Dengan layanan yang ramah, transparan, dan mudah diakses, kami berkomitmen untuk menjadi mitra kesehatan Anda dalam setiap langkah perjalanan kehamilan dan perawatan keluarga. Kami juga menawarkan berbagai program edukasi dan konseling untuk membantu ibu dan keluarga mempersiapkan diri dengan baik, mulai dari masa kehamilan hingga perawatan pasca persalinan.
+                <div class="flex flex-col gap-y-10">
+                    <div class="bg-white h-fit flex flex-col gap-y-8 py-10 px-10 rounded-2xl items-center shadow-lg">
+                        <h1 class="text-4xl font-semibold text-emerald-600">Kenapa Memilih Kami?</h1>
+                        <p class="text-base">Dengan layanan yang ramah & transparan kami berkomitmen untuk menjadi mitra kesehatan Anda dalam setiap langkah perjalanan kehamilan dan perawatan keluarga. Kami juga menawarkan berbagai program edukasi dan konseling untuk membantu ibu dan keluarga mempersiapkan diri dengan baik, mulai dari masa kehamilan hingga perawatan pasca persalinan.
+                            <br class="mb-3">
+                            
+                        Di klinik kami, setiap pasien diperlakukan dengan perhatian penuh. Kami percaya bahwa kesehatan adalah hak setiap individu, dan kami siap mendampingi Anda dalam menjaga kesehatan ibu dan bayi, agar keluarga Anda dapat tumbuh dengan sehat dan bahagia.
+                        </p>
+                    </div>
 
-                        Di klinik kami, setiap pasien diperlakukan dengan perhatian penuh, dan kami berusaha menciptakan lingkungan yang nyaman dan mendukung. Kami percaya bahwa kesehatan adalah hak setiap individu, dan kami siap mendampingi Anda dalam menjaga kesehatan ibu dan bayi, agar keluarga Anda dapat tumbuh dengan sehat dan bahagia.</p>
-                </div> --}}
-                
+                    
+                    <div class="grid grid-cols-3 gap-x-8">
+                        <div class="bg-white rounded-2xl mx-auto py-5 shadow-md">
+                            <img class=" px-16" src="https://img.icons8.com/pulsar-color/96/hospital-bed.png" alt="">
+                            <p class="mt-5 text-center">Lingkungan Nyaman</p>
+                        </div>
+                        <div class="bg-white rounded-2xl mx-auto py-5 shadow-md">
+                            <img class=" px-16" src="https://img.icons8.com/pulsar-color/96/hospital-wagon-without-a-siren.png" alt="">
+                            <p class="mt-5 text-center">Mudah Diakses</p>
+                        </div>
+                        <div class="bg-white rounded-2xl mx-auto py-5 shadow-md">
+                            <img class=" px-16" src="https://img.icons8.com/pulsar-color/96/out-patient-department.png" alt="">
+                            <p class="mt-5 text-center">Aman</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+{{-- ARTIKEL --}}
+    <section class="artikel bg-gradient-to-r from-emerald-100 to-emerald-50 my-10">
+        <div class="container mx-auto py-10">
+            <h1 class="text-5xl font-bold text-center mb-8">Artikel</h1>
+            <div class="grid grid-cols-2 gap-x-8 gap-y-5">
+                <div class="bg-white rounded-2xl py-3 px-8 shadow-lg">
+                    <h1 class="text-center font-semibold mb-5 text-lg">Pentingnya Pemeriksaan Kebidanan Rutin untuk Kesehatan Ibu dan Janin</h1>
+                    <div class="flex flex-row gap-x-5">
+                        <img class="rounded-2xl max-w-[400px] max-h-[300px]" src="https://images.pexels.com/photos/20082011/pexels-photo-20082011/free-photo-of-family-supporting-a-pregnant-woman.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                        <p>{{ Str::limit("Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore corporis magni nam ut harum dicta! Illum quia facere harum in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia dolorum sed explicabo unde ratione quibusdam vitae praesentium. Cum, ducimus dolorem. Nostrum dolorem tempore nulla adipisci porro aliquam totam eveniet nesciunt ipsum, vitae ipsa laboriosam eum expedita ratione non possimus cupiditate.", 300, '...') }}</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl py-3 px-8 shadow-lg">
+                    <h1 class="text-center font-semibold mb-5 text-lg">Menjaga Kesehatan Tubuh Selama Kehamilan: Tips dan Saran dari Bidan</h1>
+                    <div class="flex flex-row gap-x-5">
+                        <div>
+                            <img class="rounded-2xl max-w-[400px] max-h-[300px]" src="https://images.pexels.com/photos/25559069/pexels-photo-25559069/free-photo-of-people-hands-touching-pregnant-woman-abdomen.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                        </div>
+                        <p>{{ Str::limit("Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore corporis magni nam ut harum dicta! Illum quia facere harum in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia dolorum sed explicabo unde ratione quibusdam vitae praesentium. Cum, ducimus dolorem. Nostrum dolorem tempore nulla adipisci porro aliquam totam eveniet nesciunt ipsum, vitae ipsa laboriosam eum expedita ratione non possimus cupiditate.", 300, '...') }}</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl py-3 px-8 shadow-lg">
+                    <h1 class="text-center font-semibold mb-5 text-lg">Perubahan Tubuh yang Terjadi Selama Kehamilan dan Cara Menjaganya</h1>
+                    <div class="flex flex-row gap-x-5">
+                        <img class="rounded-2xl max-w-[400px] max-h-[300px]" src="https://images.pexels.com/photos/7484838/pexels-photo-7484838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                        <p>{{ Str::limit("Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore corporis magni nam ut harum dicta! Illum quia facere harum in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia dolorum sed explicabo unde ratione quibusdam vitae praesentium. Cum, ducimus dolorem. Nostrum dolorem tempore nulla adipisci porro aliquam totam eveniet nesciunt ipsum, vitae ipsa laboriosam eum expedita ratione non possimus cupiditate.", 300, '...') }}</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl py-3 px-8 shadow-lg">
+                    <h1 class="text-center font-semibold mb-5 text-lg">Pentingnya Nutrisi Seimbang untuk Ibu Hamil: Peran Kebidanan dalam Menjaga Kesehatan</h1>
+                    <div class="flex flex-row gap-x-5">
+                        <img class="rounded-2xl max-w-[400px] max-h-[300px]" src="https://images.pexels.com/photos/5425112/pexels-photo-5425112.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                        <p>{{ Str::limit("Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore corporis magni nam ut harum dicta! Illum quia facere harum in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia dolorum sed explicabo unde ratione quibusdam vitae praesentium. Cum, ducimus dolorem. Nostrum dolorem tempore nulla adipisci porro aliquam totam eveniet nesciunt ipsum, vitae ipsa laboriosam eum expedita ratione non possimus cupiditate.", 300, '...') }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row justify-center mt-10">
+                <a href="#" class="bg-gradient-to-r from-emerald-500 to-emerald-600 font-semibold border-b-2 border-emerald-900 hover:text-yellow-500 text-white py-3 px-8 rounded-2xl">Selengkapnya ..</a>
+
+            </div>
+        </div>
+    </section>
+{{-- END ARTIKEL --}}
     <div class="h-screen"></div>
 </x-guest-layout>
