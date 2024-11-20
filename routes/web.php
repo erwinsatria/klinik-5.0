@@ -10,6 +10,10 @@ Route::get('/', function () {
     return view('landingpage');
 })->name('landingpage');
 
+Route::get('/artikel', function () {
+    return view('artikel');
+})->name('artikel');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

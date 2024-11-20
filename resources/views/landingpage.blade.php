@@ -231,14 +231,14 @@
     <section>
         <div class=" mt-10 pb-10 pt-3">
             <div class="grid grid-cols-2 container mx-auto mt-5">
-                <div data-aos="fade-up">
+                <div>
                     <img class="w-3/4 rounded-2xl" src="storage/assets/1.jpeg" alt="">
                     <div class=" w-3/4 z-10 -mt-32 ml-20">
                         <img class="w-5/4 rounded-2xl" src="https://images.pexels.com/photos/14751438/pexels-photo-14751438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
                     </div>
                 </div>
 
-                <div class="flex flex-col gap-y-10" data-aos="fade-up">
+                <div class="flex flex-col gap-y-10">
                     <div class="bg-white h-fit flex flex-col gap-y-8 py-10 px-10 rounded-2xl items-center shadow-lg">
                         <h1 class="text-4xl font-semibold text-emerald-600">Kenapa Memilih Kami?</h1>
                         <p class="text-base">Dengan layanan yang ramah & transparan kami berkomitmen untuk menjadi mitra kesehatan Anda dalam setiap langkah perjalanan kehamilan dan perawatan keluarga. Kami juga menawarkan berbagai program edukasi dan konseling untuk membantu ibu dan keluarga mempersiapkan diri dengan baik, mulai dari masa kehamilan hingga perawatan pasca persalinan.
@@ -249,16 +249,16 @@
                     </div>
 
                     
-                    <div class="grid grid-cols-3 gap-x-8">
-                        <div class="bg-white rounded-2xl mx-auto py-5 shadow-md" data-aos="fade-up">
+                    <div class="grid grid-cols-3 gap-x-8" data-aos="fade-up">
+                        <div class="bg-white rounded-2xl mx-auto py-5 shadow-md">
                             <img class=" px-16" src="https://img.icons8.com/pulsar-color/96/hospital-bed.png" alt="">
                             <p class="mt-5 text-center">Lingkungan Nyaman</p>
                         </div>
-                        <div class="bg-white rounded-2xl mx-auto py-5 shadow-md" data-aos="fade-up">
+                        <div class="bg-white rounded-2xl mx-auto py-5 shadow-md">
                             <img class=" px-16" src="https://img.icons8.com/pulsar-color/96/hospital-wagon-without-a-siren.png" alt="">
                             <p class="mt-5 text-center">Mudah Diakses</p>
                         </div>
-                        <div class="bg-white rounded-2xl mx-auto py-5 shadow-md" data-aos="fade-up">
+                        <div class="bg-white rounded-2xl mx-auto py-5 shadow-md">
                             <img class=" px-16" src="https://img.icons8.com/pulsar-color/96/out-patient-department.png" alt="">
                             <p class="mt-5 text-center">Aman</p>
                         </div>
@@ -304,7 +304,7 @@
                 </div>
             </div>
             <div class="flex flex-row justify-center mt-10">
-                <a href="#" class="bg-gradient-to-r from-emerald-500 to-emerald-600 font-semibold border-b-2 border-emerald-900 hover:text-yellow-500 text-white py-3 px-8 rounded-2xl">Selengkapnya ..</a>
+                <a href="{{ route('artikel') }}" class="bg-gradient-to-r from-emerald-500 to-emerald-600 font-semibold border-b-2 border-emerald-900 hover:text-yellow-500 text-white py-3 px-8 rounded-2xl">Selengkapnya ..</a>
 
             </div>
         </div>
