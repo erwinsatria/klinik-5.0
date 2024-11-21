@@ -1,18 +1,16 @@
 <?php
 
+use App\Http\Controllers\ArtikelController;
 use App\Http\Controllers\BerobatController;
 use App\Http\Controllers\HamilController;
 use App\Http\Controllers\KberencanaController;
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('landingpage');
-})->name('landingpage');
-
-Route::get('/artikel', function () {
-    return view('artikel');
-})->name('artikel');
+Route::get('/',                                     [PageController::class, 'index'])->name('landingpage');
+Route::get('/artikel',                              [PageController::class, 'artikels'])->name('artikel');
+Route::get('/artikel/{slug}',                       [PageController::class, 'showArtikel'])->name('show.artikel');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -44,6 +42,10 @@ Route::middleware('auth')->group(function () {
     Route::get('/admin/ibu-hamil/{nik}',            [HamilController::class, 'edit'])->name('hamil.edit');
     Route::put('/admin/ibu-hamil/update/{id}',      [HamilController::class, 'update'])->name('hamil.update');
     Route::delete('/admin/ibu-hamil/delete/{id}',   [HamilController::class, 'destroy'])->name('hamil.delete');
+
+    Route::get('/admin/artikel',                    [ArtikelController::class, 'index'])->name('artikel.index');
+    Route::post('/admin/artikel/create',            [ArtikelController::class, 'store'])->name('artikel.store');
+    Route::delete('/admin/artikel/{id}',            [ArtikelController::class, 'destroy'])->name('artikel.delete');
 });
 
 require __DIR__ . '/auth.php';

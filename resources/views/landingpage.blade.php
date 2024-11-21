@@ -249,7 +249,7 @@
                     </div>
 
                     
-                    <div class="grid grid-cols-3 gap-x-8" data-aos="fade-up">
+                    <div class="grid grid-cols-3 gap-x-8">
                         <div class="bg-white rounded-2xl mx-auto py-5 shadow-md">
                             <img class=" px-16" src="https://img.icons8.com/pulsar-color/96/hospital-bed.png" alt="">
                             <p class="mt-5 text-center">Lingkungan Nyaman</p>
@@ -269,39 +269,26 @@
     </section>
 {{-- ARTIKEL --}}
     <section class="artikel bg-gradient-to-r from-emerald-100 to-emerald-50 mt-10">
-        <div class="container mx-auto py-10" data-aos="fade-up">
-            <h1 class="text-5xl font-bold text-center mb-8" data-aos="fade-up">Artikel</h1>
+        <div class="container mx-auto py-10" >
+            <h1 class="text-5xl font-bold text-center mb-8">Artikel</h1>
             <div class="grid grid-cols-2 gap-x-8 gap-y-5">
-                <div class="bg-white rounded-2xl py-3 px-8 shadow-lg">
-                    <h1 class="text-center font-semibold mb-5 text-lg">Pentingnya Pemeriksaan Kebidanan Rutin untuk Kesehatan Ibu dan Janin</h1>
-                    <div class="flex flex-row gap-x-5">
-                        <img class="rounded-2xl max-w-[400px] max-h-[300px]" src="https://images.pexels.com/photos/20082011/pexels-photo-20082011/free-photo-of-family-supporting-a-pregnant-woman.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
-                        <p>{{ Str::limit("Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore corporis magni nam ut harum dicta! Illum quia facere harum in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia dolorum sed explicabo unde ratione quibusdam vitae praesentium. Cum, ducimus dolorem. Nostrum dolorem tempore nulla adipisci porro aliquam totam eveniet nesciunt ipsum, vitae ipsa laboriosam eum expedita ratione non possimus cupiditate.", 300, '...') }}</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl py-3 px-8 shadow-lg">
-                    <h1 class="text-center font-semibold mb-5 text-lg">Menjaga Kesehatan Tubuh Selama Kehamilan: Tips dan Saran dari Bidan</h1>
-                    <div class="flex flex-row gap-x-5">
-                        <div>
-                            <img class="rounded-2xl max-w-[400px] max-h-[300px]" src="https://images.pexels.com/photos/25559069/pexels-photo-25559069/free-photo-of-people-hands-touching-pregnant-woman-abdomen.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+
+                @foreach ($data as $artikel)
+                    <div class="bg-white rounded-2xl py-3 px-8 shadow-lg">
+                        <div class="text-center font-semibold mb-5 text-lg hover:text-yellow-500">
+                            <a href="{{ route('show.artikel',$artikel->judul) }}">{{ $artikel->judul }}</a>
                         </div>
-                        <p>{{ Str::limit("Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore corporis magni nam ut harum dicta! Illum quia facere harum in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia dolorum sed explicabo unde ratione quibusdam vitae praesentium. Cum, ducimus dolorem. Nostrum dolorem tempore nulla adipisci porro aliquam totam eveniet nesciunt ipsum, vitae ipsa laboriosam eum expedita ratione non possimus cupiditate.", 300, '...') }}</p>
+                        <div class="flex flex-row gap-x-5">
+                            <img class="rounded-2xl max-w-[400px] max-h-[300px]" src="{{ asset('storage/' . $artikel->image) }}" alt="">
+                            <p>{!! strip_tags(Str::limit($artikel->deskripsi, 300, '.......',)) !!}</p>
+                        </div>
+                        <div class="flex justify-end mt-3">
+                            <p>{{ $artikel->created_at->diffForHumans() }}</p>
+
+                        </div>
                     </div>
-                </div>
-                <div class="bg-white rounded-2xl py-3 px-8 shadow-lg">
-                    <h1 class="text-center font-semibold mb-5 text-lg">Perubahan Tubuh yang Terjadi Selama Kehamilan dan Cara Menjaganya</h1>
-                    <div class="flex flex-row gap-x-5">
-                        <img class="rounded-2xl max-w-[400px] max-h-[300px]" src="https://images.pexels.com/photos/7484838/pexels-photo-7484838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                        <p>{{ Str::limit("Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore corporis magni nam ut harum dicta! Illum quia facere harum in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia dolorum sed explicabo unde ratione quibusdam vitae praesentium. Cum, ducimus dolorem. Nostrum dolorem tempore nulla adipisci porro aliquam totam eveniet nesciunt ipsum, vitae ipsa laboriosam eum expedita ratione non possimus cupiditate.", 300, '...') }}</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl py-3 px-8 shadow-lg">
-                    <h1 class="text-center font-semibold mb-5 text-lg">Pentingnya Nutrisi Seimbang untuk Ibu Hamil: Peran Kebidanan dalam Menjaga Kesehatan</h1>
-                    <div class="flex flex-row gap-x-5">
-                        <img class="rounded-2xl max-w-[400px] max-h-[300px]" src="https://images.pexels.com/photos/5425112/pexels-photo-5425112.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                        <p>{{ Str::limit("Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore corporis magni nam ut harum dicta! Illum quia facere harum in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia dolorum sed explicabo unde ratione quibusdam vitae praesentium. Cum, ducimus dolorem. Nostrum dolorem tempore nulla adipisci porro aliquam totam eveniet nesciunt ipsum, vitae ipsa laboriosam eum expedita ratione non possimus cupiditate.", 300, '...') }}</p>
-                    </div>
-                </div>
+                @endforeach
+
             </div>
             <div class="flex flex-row justify-center mt-10">
                 <a href="{{ route('artikel') }}" class="bg-gradient-to-r from-emerald-500 to-emerald-600 font-semibold border-b-2 border-emerald-900 hover:text-yellow-500 text-white py-3 px-8 rounded-2xl">Selengkapnya ..</a>

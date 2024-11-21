@@ -13,7 +13,7 @@
                <x-nav-page :href="route('kb.index')" :active="request()->routeIs('kb.index')">
                     About
                 </x-nav-page>
-                <x-nav-page :href="route('artikel')" :active="request()->routeIs('artikel')">
+                <x-nav-page :href="route('artikel')" :active="request()->routeIs('artikel','show.artikel')">
                     Artikel
                 </x-nav-page>
             </div>
@@ -40,6 +40,10 @@
                         </x-slot>
     
                         <x-slot name="content">
+                            <x-dropdown-link :href="route('dashboard')">
+                                {{ __('Dashboard') }}
+                            </x-dropdown-link>
+
                             <x-dropdown-link :href="route('profile.edit')">
                                 {{ __('Profile') }}
                             </x-dropdown-link>
